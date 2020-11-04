@@ -3,7 +3,7 @@
         HELLO: <p v-bind:id="form.email"></p>
         {{form.email}}
         <form @submit="login">
-            <input placeholder="Email" v-bind:value="form.email"/><br/>
+            <input placeholder="Email" v-model="form.email"/><br/>
             <input placeholder="Password" v-model="form.password"/><br/>
             
             <button type="submit">Click to Home</button>

@@ -1,13 +1,16 @@
 <template>
-<p>CBOTACT {{counter}}</p>
-<button @click="increment()">Click</button>
+<p v-annoying-background>CBOTACT {{counter}}</p>
+<button v-annoying-background="'red'" @click="increment()">Click</button>
 </template>
 
 <script>
 import myMixin from "../mixins/demoMixin";
-
+import { AnnoyingBackground } from '../directives/AnnoyingBackgroundDirective';
 export default {
     mixins: [myMixin],
+    directives: {
+        AnnoyingBackground
+    },
     data() {
         return {
             counter: 0
