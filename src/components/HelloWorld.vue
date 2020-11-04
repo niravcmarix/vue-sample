@@ -9,11 +9,14 @@
 
 <script>
 export default {
-  props: ['custom', 'idName'],
+  props: ['custom', 'idName', 'working'],
   data() {
     return {
       message: "hello from varuable"
     }
+  },
+  mounted() {
+    console.log(this.$parent.working, this.working);
   }
 }
 </script>

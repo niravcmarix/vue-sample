@@ -1,6 +1,6 @@
 <template>
-<p v-annoying-background>CBOTACT {{counter}}</p>
-<button v-annoying-background="'red'" @click="increment()">Click</button>
+    <p v-annoying-background>CBOTACT {{counter}}</p>
+    <button v-annoying-background="'red'" @click="increment()">Click</button>
 </template>
 
 <script>
